@@ -1,15 +1,16 @@
 #Entrada de Usuario
-nome = input('Digite seu nome:')
+nome = input('Digite seu nome: ')
 idade = input('Digite sua idade: ')
-#funçoes:
-funcao1= ('Seu nome e:{}'.format(nome))
-funcao2= ('Seu nome invertido e:'(nome[::-1]))
-funcao3= ('Seu nome contem (ou não) espaços:')
 
 if nome.strip() != '':
- print(funcao1)
- print(funcao2)
- print(funcao3)
+    print('Seu nome e:',nome)
+    print('nome invertido e: {}'.format(nome[::-1]))
+    #print('Seu nome contem (ou não) espaços:{}'format(ispace(nome)))#
+    print('Seu nome tem {} Letras'.format(len(nome)))
+    print('A primeira letra do seu nome e: {}'.format(nome[0]))
+    print('A ultima letra do seu nome e:{}'.format(nome[-1]))
 else:
-    print('error')
+    print('Desculpe você deixou campos vazios.')
+
+
 
