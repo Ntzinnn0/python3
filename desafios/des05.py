@@ -1,4 +1,12 @@
-digita_hora = int(input('Digite o horario'))
+digita_hora = input('Digite o horario')
 
-bom_dia = 
-boa_tarde = 12 
+hora = int(digita_hora)
+
+try:
+    if hora > 0 and hora < 11:
+        print ('Bom dia')
+    elif hora > 11 and hora < 17:
+        print('Boa tarde')
+    else:
+
+except:
